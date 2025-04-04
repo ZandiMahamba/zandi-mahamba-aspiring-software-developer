@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -35,7 +36,7 @@ export default function Contact() {
   
   const contactInfo = [
     { icon: MailIcon, label: "Email", value: "mahambazandile4@gmail.com" },
-    { icon: PhoneIcon, label: "Phone", value: "+27 123 456 789" },
+    { icon: PhoneIcon, label: "Phone", value: "+27 810688512" },
     { icon: MapPinIcon, label: "Location", value: "Cape Town, South Africa" },
   ];
   
