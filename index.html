@@ -1,27 +1,480 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software developer portfolio showcasing skills, projects and experience">
+    <meta name="author" content="Coding Queen">
     <title>Coding Queen | Software Developer Portfolio</title>
-    <meta name="description" content="Software developer portfolio showcasing skills, projects and experience" />
-    <meta name="author" content="Coding Queen" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">CodingQueen</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" title="Toggle Dark/Light Mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button></li>
+            </ul>
+        </nav>
+    </header>
 
-    <meta property="og:title" content="Coding Queen | Software Developer Portfolio" />
-    <meta property="og:description" content="Software developer portfolio showcasing skills, projects and experience" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span class="accent">Coding Queen</span></h1>
+                    <p>Aspiring Software Developer with a passion for coding, problem-solving, and continuous learning.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                        <a href="https://github.com/" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <a href="#about" class="scroll-down">
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+        <!-- About Section -->
+        <section id="about" class="about section-alt">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="card">
+                            <h3>Objective</h3>
+                            <p>
+                                Aspiring software developer with a passion for coding, problem-solving, 
+                                and continuous learning. Currently studying software development through 
+                                the Power Learn Project, building foundational skills in programming, web 
+                                development, and software engineering. Seeking opportunities to contribute 
+                                to real-world projects and enhance technical expertise.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-details">
+                        <div class="card">
+                            <h3>Personal Details</h3>
+                            <ul class="details-list">
+                                <li>
+                                    <i class="fas fa-calendar"></i>
+                                    <div>
+                                        <span class="detail-label">Date of Birth</span>
+                                        <span class="detail-value">20/03/2003</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-flag"></i>
+                                    <div>
+                                        <span class="detail-label">Nationality</span>
+                                        <span class="detail-value">South African</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <div>
+                                        <span class="detail-label">Gender</span>
+                                        <span class="detail-value">Female</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                
+                <div class="skills-grid">
+                    <div class="card">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>CSS</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Node.js</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Database Skills</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>SQL</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>MongoDB</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Development Tools</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git & GitHub</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>VS Code</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Soft Skills</h3>
+                        <ul class="soft-skills">
+                            <li><i class="fas fa-circle"></i> Problem-Solving</li>
+                            <li><i class="fas fa-circle"></i> Teamwork & Collaboration</li>
+                            <li><i class="fas fa-circle"></i> Attention to Detail</li>
+                            <li><i class="fas fa-circle"></i> Continuous Learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section-alt">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="education-content">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="icon-circle">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Certifications & Courses</h3>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h4>Power Learn Project Certification</h4>
+                                <p class="timeline-period">In Progress</p>
+                                <p class="timeline-description">
+                                    Comprehensive training in software development fundamentals, 
+                                    covering programming concepts, web development, and software 
+                                    engineering practices.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="education-badge">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Constantly expanding knowledge through online courses and self-study</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                
+                <p class="section-description">
+                    A showcase of my projects, including personal and educational work. 
+                    Each project demonstrates different skills and concepts I've learned.
+                </p>
+                
+                <div class="projects-grid">
+                    <div class="card project-card">
+                        <div class="project-content">
+                            <h3>Personal Portfolio</h3>
+                            <p>A responsive portfolio website built with HTML and CSS.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Responsive Design</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card project-card">
+                        <div class="project-content">
+                            <h3>Project Management App</h3>
+                            <p>A tool to help teams organize and track project milestones.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card project-card">
+                        <div class="project-content">
+                            <h3>Weather Dashboard</h3>
+                            <p>Real-time weather application with location-based forecasts.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>API Integration</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projects-footer">
+                    <a href="https://github.com/" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-github"></i> View More on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-alt">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                
+                <div class="contact-container">
+                    <div class="card contact-form-card">
+                        <h3>Get In Touch</h3>
+                        <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="card">
+                            <h3>Contact Information</h3>
+                            
+                            <ul class="info-list">
+                                <li>
+                                    <div class="icon-circle">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <span class="info-label">Email</span>
+                                        <span class="info-value">mahambazandile4@gmail.com</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-circle">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <span class="info-label">Phone</span>
+                                        <span class="info-value">+27 810688512</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-circle">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <span class="info-label">Location</span>
+                                        <span class="info-value">Cape Town, South Africa</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>Connect With Me</h3>
+                            <div class="social-links">
+                                <a href="https://github.com/" target="_blank" class="social-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/" target="_blank" class="social-btn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Coding Queen. All rights reserved.</p>
+                <p class="made-with">
+                    Made with <i class="fas fa-heart"></i> in South Africa
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark/Light Mode Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('theme-toggle');
+            
+            // Check for saved theme preference or use device preference
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const savedTheme = localStorage.getItem('theme');
+            
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.body.classList.add('dark-theme');
+            }
+            
+            // Toggle theme on button click
+            themeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('dark-theme');
+                
+                // Save preference
+                if (document.body.classList.contains('dark-theme')) {
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+            
+            // Form submission
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your message! I\'ll get back to you soon.');
+                    contactForm.reset();
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
 </html>
